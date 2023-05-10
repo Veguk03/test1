@@ -9,7 +9,8 @@ public class Flowershop {
         System.out.println("1. Rose");
         System.out.println("2. Tulips");
         System.out.println("3. Lilies");
-        System.out.print("Choose number of flowers what you want to buy: ");
+        System.out.println("4. Lotus");
+                System.out.print("Choose number of flowers what you want to buy: ");
         int flowerType = scanner.nextInt();
 
         double flowerPrice = 0;
@@ -27,6 +28,10 @@ public class Flowershop {
             case 3:
                 flowerPrice = 4.5;
                 flowerName = "Lilies";
+                break;
+            case 4:
+                flowerPrice = 7.5;
+                flowerName = "Lotus";
                 break;
             default:
                 System.out.println("Number what you choose is no exist. please try again");
